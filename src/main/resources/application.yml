@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: Gateawys
+
+serve:
+  port: 8762
+
+eureka:
+  instance:
+  preferIpAddress: false
+  hostname: ${HOSTNAME:localhost}
+
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${EUREKA_URL:https://localhost:8761/eureka}
